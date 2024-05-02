@@ -1,0 +1,60 @@
+﻿<Page x:Class="Nocturno.Info"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Nocturno"
+      xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+      mc:Ignorable="d" 
+      Height="587" Width="400"
+      Title="Info">
+
+    <Grid>
+        <Grid.Background>
+            <SolidColorBrush Color="Black" Opacity="0.6"/>
+        </Grid.Background>
+        <Border Background="Black" Opacity="0.1" x:Name="blablabla" Margin="0,10,0,482"/>
+        <Image Source="/Assets/fontbolt (1).png" Margin="25,-30,96,419" RenderOptions.BitmapScalingMode="Fant"/>
+
+        <ui:PassiveScrollViewer VerticalScrollBarVisibility="Visible" Margin="10,94,10,32">
+            <Grid Height="1771">
+                <ui:TextBlock Text="4/30/24 Update:" FontSize="15" Foreground="White" Margin="14,10,13,1734" Width="353"/>
+                <ui:TextBlock Text="v1.2.0 Is coming soon!! Please stay tuned for more updates!" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,37,10,1690"/>
+                <ui:TextBlock Text="v1.1.0.3 PATCH NOTES:" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,122,10,1629"/>
+                <ui:TextBlock Text="- Fixed map loading!" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,142,1,1609"/>
+                <ui:TextBlock Text="- Traps have been fixed and no longer cause crashing!" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,162,75,1569"/>
+                <ui:TextBlock Text="- Removed the weapon random commands! (it is no longer needed as the particles for pickups has been figured out!)" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,202,25,1509"/>
+                <ui:TextBlock Text="- Commands for map loading (e.g ''cheatscript load, cheatscript athenamapstw,  cheatscript huskaizone, cheatscript keepzone) have been fixed!" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,262,35,1429"/>
+                <ui:TextBlock Text="- Crafting Weapons is now animated! (Item will display pickup animation for crafting)" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,342,35,1390"/>
+                <ui:TextBlock Text="- Fixed Crafting for ammo (Crafting will now craft the right amount instead of 1)" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,381,35,1350"/>
+                <ui:TextBlock Text="- Work on Gadgets is underway! Nothing works as of now however some functionality exist in the form of console logs (for now!)" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,421,35,1305"/>
+                <ui:TextBlock Text="- Going back to lobby should no longer crash!" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,486,35,59"/>
+                <ui:TextBlock Text="- Going back to lobby should no longer crash! (Using a new method to travel between maps now!)" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,505,35,1206"/>
+                <ui:TextBlock Text="- HuskAIZone and KeepZone have been revamped! Husks will now walk on player-built structures (This will give you the chance to test out trap tunnels/base builds if you desire!) Enjoy!! Should there be no game-breaking bugs the update after this one will be v1.2 (nocturno version for v.12 over the next couple of days!!" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,565,45,1065"/>
+                <ui:TextBlock Text="- That is all for now. enjoy!" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,734,45,990"/>
+                <ui:TextBlock Text="- Windermed, 4/14/24" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,754,45,226"/>
+                <ui:TextBlock Text="- v1.1.0.2 PATCH NOTES:" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,822,45,928"/>
+                <ui:TextBlock Text="- fixed an issue with the pawn not loading (temorary solution)" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,843,45,888"/>
+                <ui:TextBlock Text="- Note: Interacting and Harvesting may be broken as of now (IF it is) i will look into this later if this is the case, for now it's 3AM and i need to sleep so here's a fix until i'm back later" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,883,45,808"/>
+                <ui:TextBlock Text="- Windermed" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,963,45,790"/>
+                <ui:TextBlock Text="- V1.0.0 PATCH NOTES:" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,1007,45,745"/>
+                <ui:TextBlock Text="- Restored functionality to some FortCheatManager commands!" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,1051,45,680"/>
+                <ui:TextBlock Text="- as of now, the commands that have been restored are:" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,1091,13,632"/>
+                <ui:TextBlock Text="GiveWeapon" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,1130,14,621"/>
+                <ui:TextBlock Text="GiveResources" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,1150,14,601"/>
+                <ui:TextBlock Text="GiveGadget (WIP)" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,1170,14,581"/>
+                <ui:TextBlock Text="GiveWood" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,1190,14,561"/>
+                <ui:TextBlock Text="GiveStone" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,1210,14,531"/>
+                <ui:TextBlock Text="GiveMetal" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,1230,14,521"/>
+                <ui:TextBlock Text="WannaGun (restored functionality to match accuracy!)" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,1250,14,480"/>
+                <ui:TextBlock Text="Readded Husk Functionality! Feel free to use F1, F2, F3 for summoning husks!" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,1316,35,395"/>
+                <ui:TextBlock Text="use cheatscript huskaizone for husk AI!!" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,1356,35,350"/>
+                <ui:TextBlock Text="- Load into the map you select in the lobby! (use cheatscript load for a specific map)" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,1376,35,340"/>
+                <ui:TextBlock Text="as nocturno bonus, we've added STW support for the BR map" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,1413,35,293"/>
+                <ui:TextBlock Text="type up cheatscript athenamapstw to load in!!" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,1453,35,253"/>
+                <ui:TextBlock Text="Keep in mind that i'm not done with the client version just yet. I'm still going to try to update it until i feel like it's" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,1493,35,262"/>
+                <ui:TextBlock Text="truly reached it's limit but for now, enjoy the release!!" TextWrapping="Wrap" FontSize="15" Foreground="White" Margin="14,1554,35,168"/>
+            </Grid>
+        </ui:PassiveScrollViewer>
+    </Grid>
+</Page>

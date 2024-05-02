@@ -1,0 +1,67 @@
+﻿<Page x:Class="Nocturno.Settings"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+      xmlns:local="clr-namespace:Nocturno"
+      mc:Ignorable="d" 
+      Height="587" Width="1079"
+      Title="Settings">
+
+    <Grid>
+        <Image RenderOptions.BitmapScalingMode="Fant" Source="/Assets/Nocturno.exe.0087a637_000c221c.jpeg" />
+        <Border Background="#FF292929" Height="300" Width="460" CornerRadius="8" Opacity="0.8"/>
+
+        <Grid x:Name="SettingsButtonGrid">
+            <ui:Button Click="CloseButton_Click" Background="#FF272626" Opacity="0.6" CornerRadius="5" x:Name="Misc1" Margin="1040,33,0,0" RenderTransformOrigin="0.5,0.5" Height="32" VerticalAlignment="Top" Width="34">
+                <ui:Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </ui:Button.RenderTransform>
+            </ui:Button>
+            <ui:SymbolIcon Symbol="Add24" Filled="True" FontSize="20" IsHitTestVisible="False" Margin="0,40,12,0" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Right" Height="20" RenderTransformOrigin="0.5,0.5">
+                <ui:SymbolIcon.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-45.201"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </ui:SymbolIcon.RenderTransform>
+            </ui:SymbolIcon>
+        </Grid>
+        <ui:TextBlock Foreground="White" Opacity="0.4" Text="CHANGE USERNAME" Margin="325,160,609,407" FontWeight="Bold"/>
+        <ui:TextBlock Foreground="White" Opacity="0.4" Text="CHANGE GAME PATH" Margin="325,225,609,342" FontWeight="Bold"/>
+        <ui:TextBlock Foreground="White" Opacity="0.4" Text="BRANCH" Margin="325,296,609,276" FontWeight="Bold"/>
+        <ui:TextBlock Foreground="White" Opacity="0.4" Text="CUSTOM ARGUMENTS" Margin="624,296,324,271" FontWeight="Bold"/>
+        <ui:TextBlock Foreground="White" Opacity="0.4" Text="OPEN NOCTURNO DIRECTORY" Margin="325,362,571,205" FontWeight="Bold"/>
+        <ui:TextBlock Foreground="White" Opacity="0.4" Text="HIDE LAUNCHER ON LAUNCH" Margin="583,362,323,205" FontWeight="Bold"/>
+        <ui:TextBox x:Name="usernametextbox" PlaceholderText="Username..." Foreground="White" Background="Black" Opacity="0.5" BorderBrush="White" FontSize="10" Margin="325,185,369,372" TextChanged="usernametextbox_TextChanged" />
+        <ui:TextBox Text="" Foreground="White" Background="Black" Opacity="0.5" BorderBrush="White" FontSize="10" Margin="530,314,324,237" />
+        <ui:TextBox x:Name="gamepathtextbox" Foreground="White" Background="Black" Opacity="0.5" BorderBrush="White" FontSize="10" Margin="325,250,369,307" />
+        <ComboBox x:Name="BranchComboBox" Foreground="White" Background="Black" Opacity="0.5" BorderBrush="White" FontSize="10" Margin="325,314,561,0" VerticalAlignment="Top" Height="36">
+            <ComboBoxItem Content="master" IsSelected="True" />
+            <ComboBoxItem Content="redirect-only"/>
+            <ComboBoxItem Content="beta" />
+        </ComboBox>
+        <ui:Button MouseOverBackground="#FF3954E8" x:Name="UsernameButtonEdit" Background="#FF3954E8" HorizontalAlignment="Right" Width="40" Height="30" VerticalAlignment="Top" Opacity="0.8" Margin="0,185,324,0"/>
+        <ui:SymbolIcon IsHitTestVisible="False" Symbol="CalendarEdit24" Foreground="White" Filled="False" FontSize="20" Margin="723,190,331,377"/>
+
+        <ui:Button MouseOverBackground="#FF3954E8" x:Name="PathButton" Background="#FF3954E8" HorizontalAlignment="Right" Width="40" Height="30" VerticalAlignment="Top" Opacity="0.8" Margin="0,250,323,0" Click="PathButton_Click"/>
+        <ui:SymbolIcon IsHitTestVisible="False" Symbol="Folder24" Foreground="White" Filled="False" FontSize="20" Margin="723,255,331,312"/>
+        <ui:Button MouseOverBackground="#FF3954E8" x:Name="PathButton_Copy" Background="#FF3954E8" HorizontalAlignment="Right" Width="183" Height="30" VerticalAlignment="Top" Opacity="0.8" Margin="0,387,571,0" Click="PathButton_Copy_Click"/>
+        <ui:SymbolIcon IsHitTestVisible="False" Symbol="Folder24" Foreground="White" Filled="False" FontSize="20" Margin="404,392,650,175"/>
+        <ui:Button MouseOverBackground="#FF06FF06" Click="LaunchHide_Click" x:Name="LauncherHideButton" Background="#FF06FF06" HorizontalAlignment="Right" Width="237" Height="30" VerticalAlignment="Top" Opacity="0.8" Margin="0,387,324,0"/>
+        <ui:TextBlock IsHitTestVisible="False" x:Name="LauncherHideText" Foreground="White" Opacity="1" Text="ON" Margin="626,394,431,175" FontWeight="Bold" RenderTransformOrigin="0.591,0.9"/>
+        <ui:TextBlock Foreground="White" Opacity="0.4" Text="v1.1.3" Margin="526,537,517,32" FontWeight="Bold" RenderTransformOrigin="0.591,0.9"/>
+        <ui:TextBlock Foreground="White" Opacity="0.4" Text="Made with" Margin="473,555,544,14" FontWeight="Bold" RenderTransformOrigin="0.591,0.9"/>
+        <ui:TextBlock Foreground="White" Opacity="0.4" Text="by vopswtf" Margin="555,555,461,14" FontWeight="Bold" RenderTransformOrigin="0.591,0.9"/>
+        <ui:SymbolIcon IsHitTestVisible="False" Symbol="Heart48" Foreground="White" Opacity="0.4" Filled="True" FontSize="15" Margin="532,556,524,14"/>
+        <ui:Button x:Name="LogoutButton" MouseEnter="LogoutButton_MouseEnter" MouseLeave="LogoutButton_MouseLeave" Content="LOGOUT" Foreground="White" Opacity="0.4" MouseOverBackground="Transparent" Background="Transparent" BorderBrush="Transparent" Margin="10,35,0,0" VerticalAlignment="Top" Height="32" Width="80" FontWeight="Bold" Click="LogoutButton_Click"/>
+    </Grid>
+</Page>

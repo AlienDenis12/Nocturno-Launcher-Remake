@@ -1,0 +1,19 @@
+﻿<ui:FluentWindow x:Class="Nocturno.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Nocturno"
+        xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+        mc:Ignorable="d"
+        Background="Transparent"
+        ResizeMode="NoResize"
+        ExtendsContentIntoTitleBar="True"
+        Title="Nocturno" Height="587" Width="1079">
+    <Grid>
+        <Frame x:Name="NavFrame"/>
+        <ui:TitleBar ButtonsForeground="Gray" Background="#FF292929" Height="30" Opacity="0.8" x:Name="TitleBar" ShowMaximize="False" />
+        <Image Margin="0,0,1029,558" Height="30" Source="/Assets/Nocturno.exe.00688088_35a1_256x256.png" RenderOptions.BitmapScalingMode="Fant"/>
+        <ui:TextBlock MouseEnter="UsernameTextBlock_MouseEnter" MouseLeave="UsernameTextBlock_Leave" x:Name="NameTextBlock" Text="Syphon" FontWeight="Regular" FontFamily="Bold" Opacity="0.4" RenderOptions.BitmapScalingMode="Fant" Foreground="White" Margin="50,9,964,557"/>
+    </Grid>
+</ui:FluentWindow>

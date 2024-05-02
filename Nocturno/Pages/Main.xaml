@@ -1,0 +1,95 @@
+﻿<Page x:Class="Nocturno.Main"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+      xmlns:local="clr-namespace:Nocturno"
+      mc:Ignorable="d" 
+      Height="587" Width="1079"
+      Title="Main">
+
+    <Grid x:Name="MainGrid">
+        <Image Margin="0,0,0,0" Source="/Assets/Nocturno.exe.0087a637_000c221c.jpeg" RenderOptions.BitmapScalingMode="Fant"  Stretch="UniformToFill"/>
+        <Frame x:Name="InfoFrame" Margin="0,0,679,0"/>
+
+        <Grid x:Name="PlayersPlayingGrid">
+            <Border Background="Black" Opacity="0.4" CornerRadius="5" x:Name="PlayersBorder" Margin="464,34,567,520" RenderTransformOrigin="0.5,0.5">
+                <Border.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Border.RenderTransform>
+            </Border>
+            <Border x:Name="Greendot" CornerRadius="45" Background="#FF00F700" Margin="472,45,596,531"/>
+            <ui:TextBlock Text="1" TextAlignment="Right" FontSize="15" FontFamily="Bold" Foreground="White" Margin="480,42,0,0" HorizontalAlignment="Left" Width="20" Height="15" VerticalAlignment="Top"/>
+        </Grid>
+
+        <Grid x:Name="PlayersMaxGrid">
+            <Border Background="Black" Opacity="0.4" CornerRadius="5" x:Name="PlayersMaxBorder" Margin="405,34,620,520" RenderTransformOrigin="0.5,0.5">
+                <Border.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Border.RenderTransform>
+            </Border>
+            <ui:SymbolIcon Symbol="PeopleCommunity16" FontSize="20" Filled="True" Margin="407,38,0,0" Foreground="White" HorizontalAlignment="Left" Width="25" Height="26" VerticalAlignment="Top"/>
+            <ui:TextBlock Text="168" FontSize="15" FontFamily="Bold" Foreground="White" Margin="430,42,0,0" HorizontalAlignment="Left" Width="29" Height="15" VerticalAlignment="Top"/>
+        </Grid>
+        <Image x:Name="HeroImage" RenderOptions.BitmapScalingMode="Fant" Margin="432,100,178,22" />
+
+        <Grid x:Name="LaunchButtonGrid">
+            <ui:Button x:Name="LaunchButton" MouseEnter="LaunchButton_MouseEnter" MouseLeave="LaunchButton_MouseLeave" Margin="0,475,174,0" Click="LaunchButton_Clicked" MouseOverBackground="#FF0523C8" HorizontalAlignment="Right" Width="498" Height="102" VerticalAlignment="Top" Opacity="0.8" Background="#FF0523C8"/>
+            <Image x:Name="LaunchStatus" Visibility="Visible" IsHitTestVisible="False" Margin="618,516,385,51" Source="/Assets/fontbolt (2).png" Opacity="1" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill"/>
+            <Image x:Name="LaunchStatus1" Visibility="Hidden" IsHitTestVisible="False" Margin="528,512,295,47" Source="/Assets/fontbolt (4).png" Opacity="1" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill"/>
+            <Image x:Name="LaunchStatus2" Visibility="Hidden" IsHitTestVisible="False" Margin="590,512,357,51" Source="/Assets/fontbolt (5).png" Opacity="1" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill"/>
+        </Grid>
+
+        <Grid x:Name="ServerStatusGrid" Visibility="Visible">
+            <Border x:Name="ServerStatus" Background="Gray" CornerRadius="10" Opacity="0.15" Margin="916,464,0,-3"/>
+            <Image Margin="928,480,29,90" RenderOptions.BitmapScalingMode="Fant" Source="/Assets/fontbolt (3).png" Stretch="Fill"/>
+            <ui:TextBlock Text="Friends" FontSize="20" Foreground="White" Margin="928,504,78,60"/>
+            <ui:TextBlock Text="Backend" FontSize="20" Foreground="White" Margin="928,550,71,14"/>
+            <ui:TextBlock Text="Frontend" FontSize="20" Foreground="White" Margin="928,526,68,36"/>
+            <ui:SymbolIcon Symbol="Wifi224" FontSize="40" Margin="1030,497,10,50" Foreground="#FF14D614"/>
+            <ui:SymbolIcon Symbol="Wifi224" FontSize="40" Margin="1026,519,5,28" Foreground="#FF14D614"/>
+            <ui:SymbolIcon Symbol="Wifi224" FontSize="40" Margin="1028,542,7,3" Foreground="#FF14D614"/>
+        </Grid>
+
+        <Grid x:Name="SettingsButtonGrid">
+            <ui:Button Click="SettingsButton_Clicked" Background="#FF272626" Opacity="0.6" CornerRadius="5" x:Name="Misc1" Margin="1040,33,0,0" RenderTransformOrigin="0.5,0.5" Height="32" VerticalAlignment="Top" Width="34">
+                <ui:Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </ui:Button.RenderTransform>
+            </ui:Button>
+            <ui:SymbolIcon Symbol="Settings16" Filled="True" FontSize="20" IsHitTestVisible="False" Margin="0,38,12,0" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+        </Grid>
+
+        <Grid x:Name="DiscordButtonGrid" Margin="0,39,0,-39">
+            <ui:Button Click="DiscordButton_Clicked" Background="#FF272626" Opacity="0.6" CornerRadius="5" x:Name="Misc2" Margin="1040,33,0,0" RenderTransformOrigin="0.5,0.5" Height="32" VerticalAlignment="Top" Width="34">
+                <ui:Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </ui:Button.RenderTransform>
+            </ui:Button>
+            <Image IsHitTestVisible="False" RenderOptions.BitmapScalingMode="Fant" Source="/Assets/images-removebg-preview.png" Margin="1041,39,6,526" />
+
+        </Grid>
+        <Frame x:Name="SettingsFrame" IsHitTestVisible="False" Margin="0,0,0,0"/>
+    </Grid>
+</Page>

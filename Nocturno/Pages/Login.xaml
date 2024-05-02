@@ -1,0 +1,27 @@
+﻿<Page x:Class="Nocturno.Login"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Nocturno"
+      mc:Ignorable="d" 
+      Height="587" Width="1079"
+      Title="Login">
+
+    <Grid>
+        <Image RenderOptions.BitmapScalingMode="Fant" Source="/Assets/Nocturno.exe.0087a637_000c221c.jpeg" Stretch="Fill"/>
+        <Border Background="#FF292929" Height="270" Width="350" CornerRadius="8" Opacity="0.8"/>
+
+        <ui:Button IsHitTestVisible="False" x:Name="Monkey" BorderBrush="Transparent" CornerRadius="8" Height="175" Width="311" HorizontalAlignment="Center" Margin="0,175,0,0" VerticalAlignment="Top">
+            <ui:Button.Background>
+                <ImageBrush RenderOptions.BitmapScalingMode="Fant" ImageSource="../Assets/Nocturno.exe.0068b63c_00052a8d.jpeg"/>
+            </ui:Button.Background>
+        </ui:Button>
+
+        <ui:Button MouseOverBackground="#5865F2" x:Name="LoginButton" Click="LoginButton_Click" Background="#5865F2" HorizontalAlignment="Center" Width="311" Height="50" VerticalAlignment="Top" Opacity="0.8" Margin="0,365,0,0"/>
+        <ui:TextBlock IsHitTestVisible="False" Foreground="White" Text="Login with Discord" FontSize="20" FontWeight="Bold" Margin="479,375,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30"/>
+        <ui:TextBlock Foreground="White" Text="Nocturno" FontSize="40" FontWeight="Bold" Margin="0,230,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Height="48" Width="181"/>
+        <Image IsHitTestVisible="False" RenderOptions.BitmapScalingMode="Fant" Source="/Assets/4d3420a4f1a5e94295ef681adc541b1c__1_-removebg-preview.png" Margin="428,374,609,181" />
+    </Grid>
+</Page>

@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "dgSpecHash": "rFbKhPlYW0C1XOli8W8mc1ZfWGYdMGWy258+qGeqmRBSjFgLkjUly16pSLFKhYy9f7nspViVy9r+ImAaeUtC2w==",
+  "success": true,
+  "projectFilePath": "E:\\Dev\\Nocturno\\Nocturno\\Nocturno.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Syphon\\.nuget\\packages\\fluentwpfchromes\\1.0.1\\fluentwpfchromes.1.0.1.nupkg.sha512",
+    "C:\\Users\\Syphon\\.nuget\\packages\\opendialog\\1.1.1\\opendialog.1.1.1.nupkg.sha512",
+    "C:\\Users\\Syphon\\.nuget\\packages\\wpf-ui\\3.0.4\\wpf-ui.3.0.4.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'FluentWpfChromes 1.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "FluentWpfChromes",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'OpenDialog 1.1.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "OpenDialog",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    }
+  ]
+}
